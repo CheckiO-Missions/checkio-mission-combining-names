@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+<p>
+    Поєднання імен улюблених зіркових пар у привабливу абревіатуру для масового вжитку виявляється простим для автоматизації.  
+</p>
+<p style="text-align: justify;">
+    Почніть з підрахунку, скільки максимальних груп голосних, що йдуть підряд<i>(</i>для спрощення задачі, літера <i>y</i> завжди є приголосною), існує в імені <code>first</code>. Наприклад, "br<b>a</b>d" і "j<b>ea</b>n" мають одну групу голосних, "j<b>ea</b>n<b>ie</b>" і "br<b>i</b>t<b>ai</b>n" - дві, а "<b>a</b>ng<b>e</b>l<b>i</b>n<b>a</b>" і "<b>a</b>l<b>e</b>x<b>a</b>nd<b>e</b>r" - чотири. Зверніть увагу, що група голосних може містити більше одного голосного, як у слові "q<b>ueuei</b>ng" з цілою п'ятіркою.
+</p>
+<p style="text-align: justify;">
+    Якщо ім'я має лише одну групу голосних, збережіть лише приголосні перед цією групою, а все інше видаліть. Наприклад, "b<b>e</b>n" стане "b", а "br<b>a</b>d" стане "br". В іншому випадку, якщо перше слово має <i>n</i> &gt; 1 груп голосних, збережіть все, що знаходиться перед <strong>другою останньою</strong> групою голосних <i>n</i> - 1. Наприклад, "angel<b>i</b>na" стає "angel", а "alex<b>a</b>nder" стає "alex". 
+</p>
+<p>
+    Об'єднайте цей рядок з рядком, який ви отримаєте, видаливши всі приголосні з початку імені <code>second</code>.
+</p>
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Два рядки <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Рядок <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Передумови:</strong>
+    <ul>
+    <li><i><code>first</code> імена <code>second</code> гарантовано складаються з 26 малих англійських літер, і кожне ім'я містить хоча б одну голосну та одну приголосну літеру</i>.</li>
+    </ul>
+</p>
+<p><i>Завдання взято з сайту <span>Python CCPS 109</span>. Для <span>Ryerson Chang School of Continuing Education</span> його розв'язують <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
