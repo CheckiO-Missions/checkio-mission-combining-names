@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+<p>
+    Die Kombination der Vornamen beliebter Promi-Paare zu einem eingängigen Kürzel für den Massenmedienkonsum lässt sich leicht automatisieren.  
+</p>
+<p style="text-align: justify;">
+    Beginnen Sie damit, zu zählen, wie viele maximale Gruppen von aufeinanderfolgenden Vokalen<i>(aeiou</i>, denn um dieses Problem einfach zu halten, ist der Buchstabe <i>y</i> immer ein Konsonant) in dem Namen <code>first</code> vorkommen. Zum Beispiel haben "br<b>a</b>d" und "j<b>ea</b>n" eine Vokalgruppe, "j<b>ea</b>n<b>ie</b>" und "br<b>i</b>t<b>ai</b>n" haben zwei, und "<b>a</b>ng<b>e</b>l<b>i</b>n<b>a</b>" und "<b>a</b>l<b>e</b>x<b>a</b>nd<b>e</b>r" haben vier. Beachten Sie, dass eine Vokalgruppe mehr als einen Vokal enthalten kann, wie in dem Wort "q<b>ueuei</b>ng" mit einem ganzen Fünfer.
+</p>
+<p style="text-align: justify;">
+    Wenn der Vorname nur eine Vokalgruppe enthält, behalten Sie nur die Konsonanten vor dieser Gruppe bei und streichen alles andere. Zum Beispiel wird "b<b>e</b>n" zu "b" und "br<b>a</b>d" zu "br". Andernfalls, wenn das erste Wort <i>n</i> &gt; 1 Vokalgruppen hat, behalten Sie alles vor der <strong>vorletzten</strong> Vokalgruppe <i>n</i> - 1. Zum Beispiel wird "angel<b>i</b>na" zu "angel" und "alex<b>a</b>nder" zu "alex". 
+</p>
+<p>
+    Verbinden Sie diese Zeichenfolge mit der Zeichenfolge, die Sie erhalten, wenn Sie alle Konsonanten am Anfang des <code>second</code> Namens entfernen.
+</p>
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei Zeichenketten <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> String <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+    <li><i><code>first</code> und <code>second</code> Namen bestehen garantiert aus den 26 englischen Kleinbuchstaben, und jeder Name hat mindestens einen Vokal und einen Konsonanten irgendwo</i>.</li>
+    </ul>
+</p>
+<p><i>Die Aufgabe wurde von <span>Python CCPS 109</span> übernommen. Sie wird für <span>Ryerson Chang School of Continuing Education</span> von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
