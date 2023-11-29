@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+<p>
+    将备受喜爱的明星情侣的名字组合成一个朗朗上口的速记符号，供大众媒体消费，原来是很容易实现自动化的。  
+</p>
+<p style="text-align: justify;">
+    首先，计算<code>first</code> 名字中存在多少个最大的连续元音组<i>（aeiou</i>，为使问题简单，字母<i>y</i>始终是辅音）。例如，"br<b>a</b>d "和 "j<b>ea</b>n "有一个元音组，"j<b>ea</b>n<b>ie</b>"和 "br<b>i</b>t<b>ai</b>n "有两个元音组，"<b>a</b>ng<b>e</b>l<b>i</b>n<b>a</b>"和 "<b>a</b>l<b>e</b><b>a</b> x nd<b>e</b>r "有四个元音组。请注意，一个元音组可以包含一个以上的元音，如 "q<b>ueuei</b>ng "这个词就包含了整整一个五分音符。
+</p>
+<p style="text-align: justify;">
+    如果名字只有一个元音组，则只保留该元音组前面的辅音，其他的都去掉。例如，"b<b>e</b>n "变成 "b"，"br<b>a</b>d "变成 "br"。否则，如果第一个单词有<i>n</i>&gt; 1 个元音组，则保留<strong>倒数第二个</strong>元音组<i>n</i>- 1 之前<strong>的</strong>所有内容。例如，"angel<b>i</b>na "变为 "angel"，"alex<b>a</b>nder "变为 "alex"。 
+</p>
+<p>
+    将该字符串与去掉<code>second</code> 名称开头的所有辅音后得到的字符串进行连接。
+</p>
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>两个字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出： 字符串</strong>字符串 <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>示例：</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i><code>first</code> 和 名字保证由 26 个小写英文字母组成，每个名字至少有一个元音和一个辅音<code>second</code> </i>。</li>
+    </ul>
+</p>
+<p><i>该任务摘自<span>Python CCPS 109</span> 。它由<span>Ryerson Chang School of Continuing Education</span> 教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
