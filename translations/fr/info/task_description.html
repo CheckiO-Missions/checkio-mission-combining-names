@@ -1,0 +1,50 @@
+<!-- Describe task in general -->
+<p>
+    La combinaison des prénoms de couples de célébrités bien-aimés en un raccourci accrocheur pour la consommation de masse des médias s'avère simple à automatiser.  
+</p>
+<p style="text-align: justify;">
+    Commencez par compter le nombre de groupes maximaux de voyelles consécutives<i>(aeiou</i>, car pour simplifier le problème, la lettre <i>y</i> est toujours une consonne) à l'intérieur du nom <code>first</code>. Par exemple, "br<b>a</b>d" et "j<b>ea</b>n" ont un groupe de voyelles, "j<b>ea</b>n<b>ie</b>" et "br<b>i</b>t<b>ai</b>n" en ont deux, et "<b>a</b>ng<b>e</b>l<b>i</b>n<b>a</b>" et "<b>a</b>l<b>e</b>x<b>a</b>nd<b>e</b>r" en ont quatre. Notez qu'un groupe de voyelles peut contenir plus d'une voyelle, comme dans le mot "q<b>ueuei</b>ng" qui contient cinq voyelles entières.
+</p>
+<p style="text-align: justify;">
+    Si le prénom ne comporte qu'un seul groupe vocalique, ne conservez que les consonnes précédant ce groupe et perdez tout le reste. Par exemple, "b<b>e</b>n" devient "b", et "br<b>a</b>d" devient "br". Sinon, si le premier mot comporte <i>n</i> &gt; 1 groupes de voyelles, conservez tout ce qui se trouve avant l'<strong>avant-dernier</strong> groupe de voyelles <i>n</i> - 1. Par exemple, "angel<b>i</b>na" devient "angel" et "alex<b>a</b>nder" devient "alex". 
+</p>
+<p>
+    Concaténéisez cette chaîne avec la chaîne que vous obtenez en supprimant toutes les consonnes du début du nom <code>second</code>.
+</p>
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Deux chaînes de caractères <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Chaîne <span>(str{% if is_js %}ing{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Conditions préalables:</strong>
+    <ul>
+    <li><i><code>first</code> et <code>second</code> les noms sont garantis être composés des 26 lettres minuscules anglaises, et chaque nom aura au moins une voyelle et une consonne quelque part</i>.</li>
+    </ul>
+</p>
+<p><i>La mission est tirée de <span>Python CCPS 109</span>. Elle est enseignée pour <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
